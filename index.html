@@ -5,10 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InnovaTE - Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       prefix: 'tw-',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            indie: ['Reenie Beanie', 'cursive'],
+
+          },
+        },
+      },
     }
   </script>
   <link rel="stylesheet" href="css/fonts.css">
@@ -17,63 +32,57 @@
 
 <body>
   <main class="tw-h-full tw-w-full tw-m-0 tw-p-0">
-    <div class="tw-bg-no-repeat tw-bg-center tw-bg-cover md:tw-py-16 tw-py-8"
+    <div class="tw-bg-no-repeat tw-bg-center tw-bg-cover"
       style="background-image: url('public/images/Fondo_Papel.png');">
 
-      <header class="tw-relative tw-max-w-[90rem] tw-mx-auto">
+      <header class="tw-relative tw-w-full tw-mx-auto">
         <div class="tw-flex tw-justify-center">
           <img src="public/svg/inicio/subrayadoAmarillo.svg" alt="subrayadoAmarillo"
-            class="tw-flex tw-w-7/12 tw-absolute tw-z-30 tw-min-w-80">
+            class="tw-flex tw-w-2/3 tw-absolute tw-z-30 tw-min-w-80">
         </div>
-        <div class="tw-flex tw-justify-center">
-          <img src="public/svg/inicio/textoBienvenida.svg" alt="Banner Bienvenida InnovaTE"
-            class="tw-flex tw-w-1/2 tw-z-40 tw-min-w-80">
+        <div class="tw-flex tw-justify-center tw-mt-14">
+          <div class="tw-flex tw-flex-col tw-z-40">
+            <h2 class="tw-font-indie tw-text-6xl tw-text-left tw-font-bold">Bienvenidos a</h2>
+            <img src="public/images/inicio/logoInnovate.png" alt="Texto Logo InnovaTE"
+              class="tw-flex tw-w-5/6 tw-self-center">
+          </div>
         </div>
-        <div class="tw-flex tw-justify-center">
-          <span class="tw-text-2xl tw-w-1/2 tw-z-40 tw-min-w-80">
-            Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Quia ipsa non doloremque
-            blanditiis dignissimos iure <b>placeat</b>, autem cumque minus dolore repudiandae aliquid quisquam animi,
-            quasi earum expedita, labore inventore.
-            Magnam.
+        <div class="tw-flex tw-justify-center tw-mt-6">
+          <span class="tw-text-xl tw-w-1/2 tw-z-40 tw-text-left">
+            El Programa de <b>Emprendimiento</b> de <b>Base Tecnólogica</b> de la <b>Facultad de Ingeniería</b>. Una
+            iniciativa <b>creada en el año 2013</b>, donde <b>juntos convertimos ideas</b> en <b>innovaciones</b> que
+            <b>marcan</b> la <b>diferencia</b>.
           </span>
         </div>
         <div class="tw-mb-10">
           <img src="public/svg/inicio/bienvenidaBanner.svg" alt="bienvenidaBanner">
         </div>
         <div class="tw-flex tw-justify-center">
-          <span class="tw-text-2xl tw-w-1/2 tw-z-40 tw-min-w-80">
-            Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit. Quia ipsa non doloremque
-            blanditiis dignissimos iure <b>placeat</b>, autem cumque minus dolore repudiandae aliquid quisquam animi,
-            quasi earum expedita, labore inventore.
-            Magnam.
+          <span class="tw-text-xl tw-w-1/2 tw-z-40 tw-text-left">
+            <b>Creemos</b> en el poder <b>de las ideas y en la magia de</b> convertirlas en realidades tecnológicas.
+            <b>Somos una comunidad de soñadores, creadores</b> y lideres que impulsan <b>el cambio a través de la
+              innovación y la educación.</b>
           </span>
         </div>
-        <div class="tw-flex tw-justify-center tw-my-10 tw-relative">
-          <img src="public/svg/inicio/Ovalo.svg" alt="Ovalo Logo InnovaTE" class="tw-w-1/4 tw-min-w-72">
-          <img src="public/images/inicio/logoInnovate.png" alt="Texto Logo InnovaTE"
-            class="tw-absolute tw-w-1/6 tw-min-w-40 tw-top-1/2 tw-transform tw--translate-y-1/2">
-        </div>
-        <div class="tw-flex tw-justify-center tw-mb-5">
-          <span class="tw-text-2xl tw-w-1/2 tw-z-40 tw-min-w-80">
-            Lorem ipsum dolor sit amet consectetur <b>adipisicing</b> elit:
-            Magnam.
+        <div class="tw-flex tw-justify-center">
+          <span class="tw-text-xl tw-w-1/2 tw-z-40 tw-text-left tw-mt-5">
+            En innovaTE, puedes impulsar el progreso a través de los <b>siguientes caminos:</b>
           </span>
         </div>
       </header>
 
-      <section class="md:tw-mx-8 sm:tw-mx-4 tw-mx-2 tw-overflow-hidden">
-        <section class="tw-relative tw-mt-8 tw-mx-auto tw-max-w-[90rem]"> <!-- Sección: Inicia tu viaje -->
+      <section id="secciones" class="tw-flex tw-flex-col tw-overflow-hidden">
+        <section id="inicia-tu-viaje" class="tw-relative tw-mt-8 tw-w-11/12 tw-self-center tw-bg-red-300">
           <div class="tw-justify-center tw-hidden md:tw-flex tw-relative">
             <img src="public/svg/inicio/lineasCamino.svg" class="tw-absolute">
           </div>
-          <div class="tw-flex">
-            <img src="public/svg/inicio/iniciaTuViaje.svg" alt="Inicia tu viaje" class="tw-w-1/2 tw-min-w-[30rem]">
+          <div class="tw-flex tw-w-1/2">
+            <h2 class="tw-font-indie tw-text-8xl tw-font-bold">Inicia tu viaje</h2>
           </div>
-          <div class="tw-flex">
-            <span class="tw-text-2xl md:tw-w-1/2 tw-z-40 tw-min-w-80">
-              Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit. Ullam unde quae, nesciunt omnis eligendi
-              <b>quidem
-                earum!</b> Et iste maiores delectus.
+          <div class="tw-flex tw-w-1/2">
+            <span class="tw-text-xl tw-z-40">
+              Enciende la <b>chispa de tu ingenio</b>. Aquí, las ideas se transforman en <b>emprendimientos que lideran
+                el cambio</b>.
             </span>
           </div>
           <div class="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-4 tw-min-w-80 tw-my-5">
@@ -145,9 +154,6 @@
                 </span>
               </div>
             </div>
-          </div>
-          <div class="md:tw-flex tw-hidden tw-relative">
-            <img src="public/images/inicio/testBannerProyectos.jpeg" alt="banner Proyectos" class="tw-w-full">
           </div>
         </section>
         <section class="tw-relative tw-mt-8 tw-mx-auto tw-max-w-[90rem]"> <!-- Sección: Nuestros Emprendimientos -->
